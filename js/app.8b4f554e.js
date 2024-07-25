@@ -112,7 +112,7 @@
             actions: {
               async fetchGames({ commit: n }) {
                 try {
-                  const t = await j.A.get("./juegos.json");
+                  const t = await j.A.get("../juegos.json");
                   n("setGames", t.data);
                 } catch (t) {
                   console.error("Error fetching games:", t);
